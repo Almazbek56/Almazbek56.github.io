@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>даник гей</title>
+    <title>это один человек?</title>
 </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body>
-    <h1>палипалипали фотку !</h1>
+<body>
+    <header>
+        <h1>подскажите глядя на фотографии, это один человек? !</h1>
+    </header>
+          <div class="container">
+        <h2>Свяжитесь с нами</h2>
+        <form id="feedbackForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">Сообщение успешно отправлено!</div>
+    </div>
+
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+
+            // Здесь можно добавить код для отправки данных на сервер
+            // Например, с использованием fetch или XMLHttpRequest
+
+            // Показываем сообщение об успешной отправке
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Очищаем форму
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+
+</body>
     <img src="danek.jpg" alt="danek" width="300" height="200" title= "мой друг данек">
     <img src="danka.jpg" alt="danka" width="300" height="200" title= "мой друг данька">  
 </body>
