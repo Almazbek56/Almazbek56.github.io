@@ -56,16 +56,18 @@
             text-align: center;
         }
         
-        .cat-photo {
-            display: flex;
-            gap: 20px; 
-            width: 50%;
-            max-width: 100px;
-            border-radius: 10px;
-            border: 10px solid #ffd700;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            margin: 15px auto;
-            display: block;
+       .photos-row {
+  display: flex;       /* Включаем flex-контейнер */
+  gap: 20px;          /* Расстояние между фото */
+  margin: 20px 0;     /* Отступы сверху/снизу */
+}
+
+.photos-row img {
+  width: 50%;         /* Каждая фото занимает половину */
+  border-radius: 10px; /* Скругленные углы */
+  object-fit: cover;  /* Обрезка фото по размеру */
+  height: 200px;      /* Фиксированная высота */
+}
         }
         
         /* 8. Секция с информацией */
@@ -114,7 +116,7 @@
     <!-- 12. Основной контейнер -->
     <div class="container">
         <!-- 13. Секция с фото -->
-        <section class="cat-profile">
+        <section class=".photos-row img">
             <h2>Знакомьтесь — это мой Доминиканик!</h2>
             <img src="danka.jpg" alt="Мой друг данька" class="cat-photo">,  <img src="daniel.jpg" alt="Мой друг даниэль" class="cat-photo">
               <img src="danek.jpg" alt="Мой друг данек" class="cat-photo">,  <img src="OBEZ.jpg" alt="Мой друг обезьяник" class="cat-photo">
