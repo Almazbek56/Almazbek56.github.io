@@ -1,106 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Сайт про Даньку</title>
-</head>
-<!-- Стандартная иконка -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Для современных браузеров -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- 1. Базовые настройки -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой любимый данька</title>
+    
+    <!-- 2. Подключение стилей -->
     <style>
-      body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+        /* 3. Сброс стандартных отступов */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #ffd700;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        h1 {
+        
+        /* 4. Основные стили страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f3e9; /* теплый фон */
             color: #333;
+            padding: 20px;
         }
-        .cat-photo {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            display: block;
+        
+        /* 5. Шапка сайта */
+        header {
+            background-color: #ffd700; /* золотистый */
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #e67e22; /* оранжевый */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        /* 6. Основное содержимое */
+        .container {
+            max-width: 900px;
             margin: 0 auto;
         }
-        section {
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        
+        /* 7. Секция с фото кота */
+        .cat-profile {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
         }
+        
+        .cat-photo {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            border: 5px solid #ffd700;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 20px auto;
+            display: block;
+        }
+        
+        /* 8. Секция с информацией */
+        .info-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            color: #e67e22;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #ffd700;
+            padding-bottom: 5px;
+        }
+        
+        /* 9. Стили для списков */
+        ul.features {
+            padding-left: 25px;
+            margin-top: 15px;
+        }
+        
+        ul.features li {
+            margin-bottom: 10px;
+            list-style-type: '🐾 ';
+        }
+        
+        /* 10. Подвал сайта */
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #333;
             color: white;
             border-radius: 10px;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
+    <!-- 11. Шапка сайта -->
     <header>
-        <h1>мой друг Даник </h1>
-        <p> сайт посвящен Даниэлю Михайлову</p.>
-    <h2>была ли у вас с ним тролинг конференция? </g1>
-    <p><strong>вот его тгк</strong>  <a href="https://t.me/proHatersgonna">Telegram</a>.</p>
+        <h1>Мой любимый кот</h1>
+        <p>Сайт посвящен самому очаровательному созданию на свете</p>
     </header>
-       
-<body>
-    <header>
-        <h1>Я еще раз спрашиваю, это один человек?</h1>
-        </body>
-        <img src="danek.jpg" alt="danek" width="300" height="200" title= "мой друг данек"> <img src="danka.jpg" alt="danka" width="300" height="200" title= "мой друг данька">  
-
-</body>
-<body>
-    <header>
-        <h1>а это другой человек? </h1> 
-        <img src="OBEZ.jpg" alt="obez" width="300" height="200" title= "мой друг обезьяник"> 
-
-        </body>
-</body>
-   <div class="container">
-        <h2>кто это? </h2>
-        <form id="feedbackForm">
-            <label for="name">как зовут его ебыря:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">адрес почты на котором его ебали:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">в подробностях расскажите как ему на рот давали:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Отправить</button>
-        </form>
-        <div id="successMessage" class="success-message" style="display: none;">Сообщение успешно отправлено!</div>
+    
+    <!-- 12. Основной контейнер -->
+    <div class="container">
+        <!-- 13. Секция с фото -->
+        <section class="cat-profile">
+            <h2>Знакомьтесь — это мой кот!</h2>
+            <img src="DANKA.jpg" alt="Мой друг данька" class="cat-photo">
+        </section>
+        
+        <!-- 14. Информационная секция -->
+        <section class="info-section">
+            <h2>Основные данные</h2>
+            <p>Имя: <strong>Барсик</strong></p>
+            <p>Возраст: 3 года</p>
+            <p>Порода: Дворовый аристократ</p>
+            <p>Характер: Ласковый, но с характером</p>
+        </section>
+        
+        <!-- 15. Секция с особенностями -->
+        <section class="info-section">
+            <h2>Любимые занятия</h2>
+            <ul class="features">
+                <li>Спать в самых неожиданных местах</li>
+                <li>Требовать еду в 5 утра</li>
+                <li>Игнорировать купленные игрушки</li>
+                <li>Играть с бумажками и пакетами</li>
+                <li>Мурлыкать на коленях</li>
+            </ul>
+        </section>
+        
+        <!-- 16. Секция распорядка дня -->
+        <section class="info-section">
+            <h2>Распорядок дня</h2>
+            <p>06:00 — Разбудить хозяина</p>
+            <p>06:05 — Поесть</p>
+            <p>06:10 — Снова спать</p>
+            <p>...и так весь день!</p>
+        </section>
     </div>
-
-    <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Предотвращаем отправку формы
-
-            // Здесь можно добавить код для отправки данных на сервер
-            // Например, с использованием fetch или XMLHttpRequest
-
-            // Показываем сообщение об успешной отправке
-            document.getElementById('successMessage').style.display = 'block';
-
-            // Очищаем форму
-            document.getElementById('feedbackForm').reset();
-        });
-    </script>
+    
+    <!-- 17. Подвал сайта -->
+    <footer>
+        <p>© 2025 Сайт создан с любовью к даньку. Все права на данзбец хайп защищены.</p>
+    </footer>
+</body>
 </html>
