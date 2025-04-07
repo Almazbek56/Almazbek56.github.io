@@ -57,17 +57,22 @@
         }
  .photos-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     margin: 30px 0;
   }
   .photos-row img {
-    width: 50%;
-    border-radius: 10px;
-    object-fit: cover;
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: calc(50% - 10px); /* Ширина 50% минус половина gap */
+            height: auto;           /* Сохраняем пропорции */
+            border-radius: 10px;     /* Скругленные углы */
+            object-fit: cover;       /* Обрезаем фото по размеру */
+            max-width: 100%;         /* Не превышаем ширину контейнера */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
   }
-        
+            .photo-gallery img:hover {
+            transform: scale(1.5);
         /* 8. Секция с информацией */
         .info-section {
             background: white;
