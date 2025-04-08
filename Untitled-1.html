@@ -146,16 +146,19 @@
               <img src="danek.jpg" alt="Мой друг данек">  <img src="OBEZ.jpg" alt="Мой друг обезьяник" >
       
        
+   
+  </section>
+    <section>
     <div id="cat-response">Нажми кнопку, чтобы погладить кота!</div>
     <button onclick="petCat()">Погладить кота</button>
-  </section>
-    <script>
-        function petCat() {
+       <script>; 
+           function petCat() {
             const responses = ["Муррр!", "Мне нравится!", "Еще, еще!", "Хочу спать..."];
             const randomResponse = responses[Math.floor(Math.random() * responses.length)];
             document.getElementById('cat-response').textContent = randomResponse;
         }
     </script>
+    </section>
         <!-- 14. Информационная секция -->
         <section class="info-section">
             <h2>Основные данные</h2>
