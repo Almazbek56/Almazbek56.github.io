@@ -74,7 +74,16 @@
              .photos-row img:hover {
             transform: scale(1.03);
             }
-        
+        @media (max-width: 768px) { 
+            .photos-row {
+                flex-direction: column;
+                align-itrms: center;
+            }
+            .photos-row img {
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 15px;
+            }
         /* 8. Секция с информацией */
         .info-section {
             background: white;
