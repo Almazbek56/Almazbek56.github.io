@@ -83,6 +83,16 @@
                 width: 100%;
                 max-width: 400px;
                 margin-bottom: 15px;
+                 button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #cat-response {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
             }
         /* 8. Секция с информацией */
         .info-section {
@@ -134,8 +144,17 @@
         <section class="photos-row">
             <img src="danka.jpg" alt="Мой друг данька">  <img src="daniel.jpg" alt="Мой друг даниэль" >
               <img src="danek.jpg" alt="Мой друг данек">  <img src="OBEZ.jpg" alt="Мой друг обезьяник" >
-        </section>
-        
+      
+       
+    <div id="cat-response">Нажми кнопку, чтобы погладить кота!</div>
+    <button onclick="petCat()">Погладить кота</button>
+  </section>
+    <script>
+        function petCat() {
+            const responses = ["Муррр!", "Мне нравится!", "Еще, еще!", "Хочу спать..."];
+            const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+            document.getElementById('cat-response').textContent = randomResponse;
+        }
         <!-- 14. Информационная секция -->
         <section class="info-section">
             <h2>Основные данные</h2>
